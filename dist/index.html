@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="main.js" defer></script>
+    <title>Etch a sketch</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+
+<body class="bg-gray-50 flex flex-col gap-10 h-screen w-screen items-center justify-center -z-20">
+    <img src="./img/background.svg" alt="rainbow vector" class="opacity-75 self-end object-cover max-h-screen h-[max(50vw,30em)] bottom-0 absolute -z-10">
+    <h1 class="text-[clamp(2.5rem,10vw,4rem)] font-bold text-center absolute top-[max(20vw,4rem)]">Etch-a-Sketch</h1>
+    <div id='grid' class="overflow-hidden w-[clamp(17em,50vw,30em)] h-[clamp(17em,50vw,30em)] bg-white rounded-md grid grid-cols-[repeat(16,1fr)] grid-rows-[repeat(16,1fr)]" style="box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;"></div>
+</body>
+
+</html>

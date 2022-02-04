@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="1000"
+   height="1000"
+   viewBox="0 0 1000 1000"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   sodipodi:docname="background.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="px"
+     showgrid="false"
+     width="1000px"
+     inkscape:zoom="0.52294922"
+     inkscape:cx="536.38095"
+     inkscape:cy="542.11765"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="388"
+     inkscape:window-y="-3"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       style="fill:#0000ff;fill-rule:evenodd;stroke-width:1.91223"
+       d="M 373.32399,638.65089 C 573.15219,439.39182 796.66816,216.88032 870.02614,144.18084 L 1003.4043,12 V 506.54701 1001.094 L 506.70215,1001.017 10,1000.94 Z"
+       id="path228" />
+    <path
+       style="fill:#00ff00;fill-rule:evenodd;stroke-width:1.91223"
+       d="M 493.32399,756.65089 C 693.15219,557.39182 916.66816,334.88032 990.02614,262.18084 L 1123.4043,130 V 624.54701 1119.094 L 626.70215,1119.017 130,1118.94 Z"
+       id="path427" />
+    <path
+       style="fill:#ffff00;fill-rule:evenodd;stroke-width:1.91223"
+       d="M 613.32399,876.65089 C 813.15219,677.39182 1036.6682,454.88032 1110.0262,382.18084 L 1243.4044,250 V 744.54701 1239.094 L 746.70215,1239.017 250,1238.94 Z"
+       id="path427-0" />
+    <path
+       style="fill:#ff0000;fill-rule:evenodd;stroke-width:1.91223"
+       d="M 733.32399,996.65089 C 933.15219,797.39182 1156.6682,574.88032 1230.0262,502.18084 L 1363.4044,370 V 864.54701 1359.094 L 866.70215,1359.017 370,1358.94 Z"
+       id="path427-0-6" />
+  </g>
+</svg>
