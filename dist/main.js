@@ -1,8 +1,14 @@
+// TODO:
+// - Enable clear button
+// - Enable rainbow/erase mode
+// - Enable button style change when active
+
 // ****************DOM OBJECTS****************
 const grid = document.querySelector('#grid');
 const gridSlider = document.querySelector('#grid-slider');
 const gridSize = document.querySelector('#grid-size');
 const colorPicker = document.querySelector('#color-picker');
+const clearButton = document.querySelector('#clear-btn');
 
 // *****************VARIABLES*****************
 var currentColor = colorPicker.value;
@@ -27,6 +33,11 @@ function changeGrid(size) {
 }
 
 // **************EVENT LISTENERS**************
+// Changes the current color when the color picker is changed
+colorPicker.addEventListener('change', () => {
+    currentColor = colorPicker.value;
+});
+
 // Add an event listener to the slider which changes the grid size and label
 gridSlider.addEventListener('input', () => {
     gridSize.textContent = `${gridSlider.value}x${gridSlider.value}`;
@@ -39,12 +50,8 @@ grid.addEventListener('mouseover', (e) => {
     e.target.style.backgroundColor = currentColor;
 });
 grid.addEventListener('mousedown', (e) => {
+    e.preventDefault();
     e.target.style.backgroundColor = currentColor;
-});
-
-// Changes the current color when the color picker is changed
-colorPicker.addEventListener('change', () => {
-    currentColor = colorPicker.value;
 });
 
 // *****************PAGE LOAD*****************
