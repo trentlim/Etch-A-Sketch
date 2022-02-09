@@ -12,10 +12,26 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 
-<body class="bg-gray-50 flex flex-col gap-10 h-screen w-screen items-center justify-center -z-20">
-    <img src="./img/background.svg" alt="rainbow vector" class="opacity-75 self-end object-cover max-h-screen h-[max(50vw,30em)] bottom-0 absolute -z-10">
-    <h1 class="text-[clamp(2.5rem,10vw,4rem)] font-bold text-center absolute top-[max(20vw,4rem)]">Etch-a-Sketch</h1>
-    <div id='grid' class="overflow-hidden w-[clamp(17em,50vw,30em)] h-[clamp(17em,50vw,30em)] bg-white rounded-md grid grid-cols-[repeat(16,1fr)] grid-rows-[repeat(16,1fr)]" style="box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;"></div>
+<body class="bg-gray-50 h-screen w-screen -z-20 relative">
+    <img src="./img/background.svg" alt="rainbow vector" class="opacity-75 bottom-0 right-0 absolute object-cover -z-10 max-h-screen h-[max(50vw,30rem)]">
+    <div class="p-6 flex flex-col h-screen w-screen justify-center items-center gap-4 md:grid md:grid-cols-3 md:grid-rows-[1fr,2fr,1fr] md:[grid-gap:2rem]">
+        <h1 class="text-[clamp(2.8rem,10vw,4rem)] font-bold text-center m-0 md:[grid-column:1/-1]">Etch-a-Sketch</h1>
+        <div id='grid' class="mx-auto self-center justify-self-center overflow-hidden w-[clamp(20rem,50vw,30rem)] h-[clamp(20rem,50vw,30rem)] bg-white rounded-md grid md:[grid-col:3/4]" style="box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;"></div>
+        <div class="gap-2 md:gap-4 bg-white rounded-2xl flex flex-col justify-start items-center text-xs md:min-w-[15rem] max-w-xs w-full p-3 md:text-lg md:[grid-row:2] md:[grid-col:1/2] md:justify-self-end font-bold md:font-semibold" style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;">
+            <div class="flex flex-col justify-center items-center">
+                <p class="text-gray-400 mb-1">Choose a color</p>
+                <div class="[border-radius:50%] w-14 h-14 relative overflow-hidden"><input type="color" id="color-picker" value="#dc2626" class="w-20 -left-2 relative h-20 -top-2"></div>
+            </div>
+            <button id="color-btn" class="btn active-btn">Color Mode</button>
+            <button id="rainbow-btn" class="btn inactive-btn">Rainbow Mode</button>
+            <button id="erase-btn" class="btn inactive-btn">Erase</button>
+            <button id="clear-btn" class="btn bg-white text-gray-500 p-0">Clear Canvas</button>
+            <div class="flex flex-col items-center justify-center w-full">
+                <p class="text-gray-500" id="grid-size">16x16</p>
+                <input class="w-1/2 md:w-44" type="range" id="grid-slider" value="16" min="2" max="40">
+            </div>
+        </div> 
+    </div>
 </body>
 
 </html>
