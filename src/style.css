@@ -7,7 +7,8 @@
 }
 
 .inactive-btn {
-    @apply bg-white text-blue-500 border-2 border-blue-500;
+    @apply bg-white text-blue-500;
+    box-shadow: #3b82f6 0px 0px 0px 2px inset;
 }
 
 @tailwind base;
